@@ -28,7 +28,7 @@ TextureImporter:
     second: Sprite_Mario_7
   - first:
       213: -5672653749854861051
-    second: Sprite_Mario_8
+    second: MarioJump
   - first:
       213: 3387244394707617170
     second: Sprite_Mario_9
@@ -207,6 +207,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -454,7 +455,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_8
+      name: MarioJump
       rect:
         serializedVersion: 2
         x: 144
@@ -1576,6 +1577,68 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Sprite_Mario_55: -9079682761693699110
+      Sprite_Mario_54: -2451452407061476743
+      Sprite_Mario_19: 7479211179968422096
+      Sprite_Mario_29: 3336705031637967656
+      Sprite_Mario_27: -1724382975095085423
+      Sprite_Mario_23: 6347872850137420558
+      Sprite_Mario_6: 5693412132100505836
+      Sprite_Mario_12: -598077030875622236
+      Sprite_Mario_21: -4629119407898994041
+      Sprite_Mario_42: 6996871328585145904
+      Sprite_Mario_33: 8491002066584885046
+      Sprite_Mario_43: 8998336714475331594
+      Sprite_Mario_50: -5021473000565013323
+      Sprite_Mario_31: -3239394828119450290
+      Sprite_Mario_3: 1554904934580016266
+      Sprite_Mario_37: 8706566674536967793
+      Sprite_Mario_44: 1329661449039804243
+      Sprite_Mario_52: 2024578721505582386
+      Sprite_Mario_11: 1357806328429647872
+      MarioWalk2: -3905991941800648080
+      Sprite_Mario_32: 5513065419899303231
+      MarioWalk1: 7535359878243092818
+      Sprite_Mario_10: 8537440539389071336
+      MarioIdle: 4638078165498462608
+      Sprite_Mario_45: 3354623957607304124
+      Sprite_Mario_46: 7368133104323931243
+      Sprite_Mario_13: -7156801889515416839
+      Sprite_Mario_14: 7980998295276442
+      Sprite_Mario_48: -4040994371160570336
+      Sprite_Mario_38: -3604062871113111416
+      Sprite_Mario_57: 4596178438584576817
+      Sprite_Mario_49: 2070263079612885921
+      Sprite_Mario_34: -7562379391476108956
+      Sprite_Mario_53: -991126873710766664
+      Sprite_Mario_20: -1941499065591448453
+      Sprite_Mario_26: 7762986594224042539
+      Sprite_Mario_5: -7207716073158996441
+      Sprite_Mario_15: 5708472064614676027
+      Sprite_Mario_17: -8647316737487248356
+      Sprite_Mario_47: 3302078408146908689
+      Sprite_Mario_24: 1855175835024724854
+      Sprite_Mario_9: 3387244394707617170
+      Sprite_Mario_18: 4567098361401889599
+      Sprite_Mario_39: -4622941222364186104
+      Sprite_Mario_51: -3917910848853407703
+      Sprite_Mario_25: -3598681989761177212
+      Sprite_Mario_4: -3171580361127328770
+      Sprite_Mario_35: 3014445400692401966
+      Sprite_Mario_60: 1622122130505264950
+      Sprite_Mario_58: -223910129502012368
+      Sprite_Mario_56: 102199271187479275
+      MarioJump: -5672653749854861051
+      Sprite_Mario_41: 7599126599415133676
+      Sprite_Mario_36: -6005365102188713975
+      Sprite_Mario_22: -5511660270334715914
+      Sprite_Mario_30: -5444284473453412056
+      Sprite_Mario_28: 4008937936191787000
+      Sprite_Mario_40: 5778968304725270991
+      Sprite_Mario_7: -1236749345658543323
+      Sprite_Mario_16: -9218963548213284818
+      Sprite_Mario_59: -7734174553045002093
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
