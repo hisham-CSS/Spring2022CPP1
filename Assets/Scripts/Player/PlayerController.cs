@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
+        AnimatorClipInfo[] curPlayingClip = anim.GetCurrentAnimatorClipInfo(0);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
 
@@ -58,13 +59,31 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.AddForce(Vector2.up * jumpForce);
         }
-
-        Vector2 moveDirection = new Vector2(horizontalInput * speed, rb.velocity.y);
-        rb.velocity = moveDirection;
+        if (curPlayingClip.Length > 0)
+        {
+            if (curPlayingClip[0].clip.name != "Fire")
+            {
+                Vector2 moveDirection = new Vector2(horizontalInput * speed, rb.velocity.y);
+                rb.velocity = moveDirection;
+            }
+            else
+            {
+                rb.velocity = Vector2.zero;
+            }
+        }
+         
 
         anim.SetFloat("speed", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", isGrounded);
 
         //check for flipped
+        //if (horizontalInput > 0 && sr.flipX || horizontalInput < 0 && !sr.flipX )
+        //    sr.flipX = !sr.flipX;
+
+        if (horizontalInput != 0)
+            sr.flipX = (horizontalInput < 0);
+
+        //sr.flipX = (horizontalInput < 0) ? true : (horizontalInput > 0) ? false : sr.flipX;
+
     }
 }
