@@ -118,7 +118,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,6 +147,174 @@ TextureImporter:
       bones: []
       spriteID: ae18f28bc6b18c8a0800000000000000
       internalID: -6284743126234988054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoopaWalk1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 123
+        width: 16
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f95d5816dc359438496d12d06ebee5
+      internalID: -2968480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KoopaWalk2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 123
+        width: 16
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83afc7ac72052064ab1a81ec403d4bfd
+      internalID: 1703715505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KooopSquished
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 120
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa58b878737e13a4fa55d08bfc87d764
+      internalID: 1775099040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretIdle
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 312
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e998e347bbad264e9d5b89ae2f5554d
+      internalID: -1300080968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretFire2
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 312
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c016909352d8f4d9a99f81b82d1383
+      internalID: -1406256334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretFire3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 312
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67801e9068218247917f2200e8ee9a3
+      internalID: 949224777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretFire1
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 312
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7f553740ff3ba45976667e6c1ce0b5
+      internalID: -1899363303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 137
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5a3f1e5312de5448b99d2bb5d409fc
+      internalID: -533678576
       vertices: []
       indices: 
       edges: []
@@ -162,8 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      TurretIdle: -1300080968
+      KooopSquished: 1775099040
       EnemyProjectile: -6284743126234988054
+      KoopaWalk2: 1703715505
+      TurretFire2: -1406256334
+      TurretFire1: -1899363303
+      KoopaWalk1: -2968480
       PlayerProjectile: 764029468473576725
+      TurretFire3: 949224777
+      Death: -533678576
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

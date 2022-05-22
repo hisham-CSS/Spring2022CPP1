@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground Check
+  - Squish
+  - Enemy
+  - Barrier
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX

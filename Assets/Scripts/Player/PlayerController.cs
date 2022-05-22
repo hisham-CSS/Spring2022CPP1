@@ -151,4 +151,15 @@ public class PlayerController : MonoBehaviour
         jumpForce /= 2;
         coroutineRunning = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Squish")
+        {
+            collision.gameObject.GetComponentInParent<EnemyWalker>().IsSquished();
+
+            rb.velocity = Vector2.zero;
+            rb.AddForce(Vector2.up * jumpForce);
+        }
+    }
 }
