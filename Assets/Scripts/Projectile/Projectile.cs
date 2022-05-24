@@ -25,6 +25,7 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.tag != "Player")
             Destroy(gameObject);
 
+
         if (collision.gameObject.tag == "Enemy")
         {
             if (gameObject.tag == "PlayerProjectile")
@@ -36,6 +37,15 @@ public class Projectile : MonoBehaviour
 
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && gameObject.tag == "EnemyProjectile")
+        {
+            GameManager.instance.lives--;
+            Destroy(gameObject);
         }
     }
 }

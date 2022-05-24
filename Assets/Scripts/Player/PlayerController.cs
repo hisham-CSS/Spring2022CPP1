@@ -9,28 +9,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     SpriteRenderer sr;
 
-    private int _lives = 1;
-    public int maxLives = 3;
-
-    public int lives
-    {
-        get { return _lives; }
-        set 
-        {
-            //if (_lives > value)
-            //respawn code here
-
-            _lives = value;
-
-            if (_lives > maxLives)
-                _lives = maxLives;
-
-            //if (_lives < 0)
-            //gameover
-
-            Debug.Log("Lives Set To: " + lives.ToString());
-        }
-    }
+    
     
     public float speed;
     public int jumpForce;

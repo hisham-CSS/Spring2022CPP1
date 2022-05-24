@@ -17,15 +17,13 @@ public class Collectible : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            PlayerController curPlayer = collision.gameObject.GetComponent<PlayerController>();
-
             switch (curCollectible)
             {
                 case CollectibleType.LIFE:
-                    curPlayer.lives++;
+                    GameManager.instance.lives++;
                     break;
                 case CollectibleType.POWERUP:
-                    curPlayer.StartJumpForceChange();
+                    GameManager.instance.playerInstance.StartJumpForceChange();
                     break;
             }
 

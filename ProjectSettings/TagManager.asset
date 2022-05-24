@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Barrier
   - PlayerProjectile
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
