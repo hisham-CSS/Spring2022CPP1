@@ -48,5 +48,7 @@ public class ShootProjectile : MonoBehaviour
             Projectile curProjectile = Instantiate(projectilePrefab, projectileSpawnPointLeft.position, projectileSpawnPointLeft.rotation);
             curProjectile.speed = -projectileSpeed;
         }
+
+        Debug.LogError("Pause");
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
             }
 
             _lives = value;
+            onLifeValueChanged.Invoke(value);
 
             if (_lives > maxLives)
                 _lives = maxLives;
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
     public PlayerController playerPrefab;
     [HideInInspector] public PlayerController playerInstance;
     [HideInInspector] public Level currentLevel;
+    [HideInInspector] public UnityEvent<int> onLifeValueChanged;
 
     // Start is called before the first frame update
     void Start()
@@ -59,13 +62,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (SceneManager.GetActiveScene().name == "Start")
-                SceneManager.LoadScene("Level");
-            else if (SceneManager.GetActiveScene().name == "GameOver")
-                SceneManager.LoadScene("Start");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    if (SceneManager.GetActiveScene().name == "Start")
+        //        SceneManager.LoadScene("Level");
+        //    else if (SceneManager.GetActiveScene().name == "GameOver")
+        //        SceneManager.LoadScene("Start");
+        //}
     }
 
     void GameOver()
