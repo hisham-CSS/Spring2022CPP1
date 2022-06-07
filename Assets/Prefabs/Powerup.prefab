@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curCollectible: 0
+  pickupSound: {fileID: 8300000, guid: f855061fd0cf4b04fb6f17afaf459a27, type: 3}
+  soundFXGroup: {fileID: -1399683985931906479, guid: ab4a4c579fb65af49add6bbcf14bc8c5, type: 2}
